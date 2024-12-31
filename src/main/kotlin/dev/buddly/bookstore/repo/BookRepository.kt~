@@ -1,0 +1,5 @@
+package dev.buddly.bookstore.repo
+
+import org.springframework.data.jpa.repository.JpaRepository
+
+interface BookRepository : JpaRepository<dev.buddly.bookstore.domain.Book, String>

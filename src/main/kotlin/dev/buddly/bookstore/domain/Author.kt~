@@ -1,0 +1,15 @@
+package dev.buddly.bookstore.domain
+
+import jakarta.persistence.*
+
+@Entity
+@Table(name = "authors")
+data class Author(
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "author_id_seq")
+    var id: Long?,
+    var name: String,
+    var age: Int,
+    var description: String,
+    var image: String
+)
